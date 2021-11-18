@@ -1,0 +1,22 @@
+<%-include("../initials/header")%>
+
+      <form action="/student/assign-stu" method="post">
+        <label for="mentor_id">Select Mentor</label>
+       
+        <select name="mentor_id">
+          <% mentor.forEach(mentor=>{ %>
+          <option value="<%=mentor._id%>"><%= mentor.name %></option>
+          <% }) %>
+        </select>
+          <br/>
+          <label for="student_id">Select Student</label>        
+        <select name="student_id">
+            <% student.forEach(student=>{ %>
+            <option value="<%=student._id%>"><%= student.name %></option>
+            <% }) %>
+          </select>
+          <br/>
+          <input type="submit" value="Submit" />
+      </form>
+      <%-include("../initials/footer")%>
+

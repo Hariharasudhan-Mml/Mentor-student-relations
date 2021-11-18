@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(to right, chartreuse,rgb(0, 255, 128),rgb(8, 104, 194))
+}
+a{
+    padding: 10px;
+    margin: 20px;
+    margin-top: 50px;
+    display: inline-block;
+    background-color: darkgray;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(119, 111, 111);
+}
+form *{
+    padding: 5px;
+    margin: 10px;
+}

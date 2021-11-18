@@ -1,0 +1,14 @@
+<%-include("../initials/header")%>
+<form action="/showall" method="post">
+<label>select Particular mentor to view their students </label>
+<select>
+    <% mentor.forEach(mentor=>{ %>
+        <option value="<%=mentor._id %>"><%=mentor.name%></option>
+
+    <%})%>
+</select><br/>
+<input type="submit" value="Submit"/>
+</form>
+
+
+<%-include("../initials/footer")%>

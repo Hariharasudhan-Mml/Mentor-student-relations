@@ -1,0 +1,19 @@
+<%-include("../initials/header")%>
+
+      <form action="/mentor/update-mentor" method="post">
+        <label for="student_id">Select Student and change Mentor</label>
+
+        <select name="student_id">
+          <% student.forEach(student=>{ %>
+          <option value="<%=student._id%>"><%= student.name %></option>
+          <% }) %></select><br />
+        <label for="mentor_id">select Mentor to Update</label>
+        <select name="mentor_id">
+          <% mentor.forEach(mentor=>{ %>
+          <option value="<%=mentor._id%>"><%= mentor.name %></option>
+          <% }) %>
+        </select><br/>
+        <input type="submit" name="submit"/>
+      </form>
+<%-include("../initials/footer")%>
+  

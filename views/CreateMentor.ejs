@@ -1,0 +1,9 @@
+<%-include("../initials/header")%>
+
+        <form action="/mentor/create" method="post">
+            <label for="name">Name</label><input type="text" name="name"/><br/>
+            <label for="age">Age</label><input type="number" name="age"/><br/>
+            <label for="experience">Experience</label><input type="number" name="experience" /><br/>
+            <input type="submit" name="submit" value="Submit"/>
+        </form>
+        <%-include("../initials/footer")%>
